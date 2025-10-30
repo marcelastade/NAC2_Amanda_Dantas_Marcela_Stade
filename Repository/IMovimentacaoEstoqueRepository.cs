@@ -4,6 +4,6 @@ namespace NAC2.Repository
 {
     public interface IMovimentacaoEstoqueRepository
     {
-        Task<int> UpdadeEstoqueAsync(MovimentacaoEstoque movimentacao);
+        Task<int> IncluiMovimentacaoProdutoAsync(MovimentacaoEstoque movimentacao);
     }
 }

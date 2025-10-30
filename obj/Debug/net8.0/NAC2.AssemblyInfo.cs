@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NAC2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf380d87bb6ad2672755d24850099e02632b06c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("NAC2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NAC2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
