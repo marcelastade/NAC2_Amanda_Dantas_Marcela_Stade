@@ -3,8 +3,8 @@
 O NAC2 é uma API REST desenvolvida em .NET 8, utilizando Dapper, MySQL e Redis para controle de cache.
 O sistema permite o cadastro de produtos, controle de movimentações de estoque (entrada e saída), além de validações de regras de negócio relacionadas à validade de produtos perecíveis e alertas de estoque mínimo.
 
-⚙️ #Regras de Negócio Implementadas
-🧩 #Produto
+# ⚙️ Regras de Negócio Implementadas
+# 🧩 Produto
 
 O nome, categoria, preço unitário e quantidade mínima são obrigatórios.
 
@@ -14,7 +14,7 @@ Produtos perecíveis não podem ter movimentações após a data de validade.
 
 Produtos abaixo da quantidade mínima geram log de alerta no sistema.
 
-📦 #Movimentação de Estoque
+# 📦 Movimentação de Estoque
 
 Tipos permitidos: ENTRADA e SAIDA.
 
@@ -24,7 +24,7 @@ Caso o produto ainda não tenha movimentações, ele é incluído automaticament
 
 Movimentações de produtos perecíveis vencidos são bloqueadas.
 
-🧱 #Diagrama Simples das Entidades
+# Diagrama Simples das Entidades
 +-------------------+
 |     Produto       |
 +-------------------+
@@ -50,8 +50,8 @@ Movimentações de produtos perecíveis vencidos são bloqueadas.
 | CodSKU (FK -> Produto)    |
 +---------------------------+
 
-🔧 #Como Executar o Projeto
-✅ #Pré-requisitos
+# 🔧 Como Executar o Projeto
+# ✅ Pré-requisitos
 
 .NET 8 SDK
 
@@ -61,7 +61,7 @@ Redis
 
 Visual Studio 2022 ou VS Code
 
-🚀 Passos para executar
+# 🚀 Passos para executar
 
 Clone o repositório:
 
@@ -85,8 +85,8 @@ Acesse a API no navegador:
 
 https://localhost:7080/swagger
 
-📬 #Exemplos de Requisições API
-🔹 #Cadastrar Produto
+#  Exemplos de Requisições API
+#🔹 Cadastrar Produto
 
 POST /api/Produto
 
@@ -99,7 +99,7 @@ POST /api/Produto
   "DataCriacao": "2025-10-30T00:00:00Z"
 }
 
-🔹 #Registrar Movimentação de Estoque
+#🔹Registrar Movimentação de Estoque
 
 POST /api/MovimentacaoEstoque
 
@@ -112,7 +112,7 @@ POST /api/MovimentacaoEstoque
   "CodSKU": 101
 }
 
-🔹 Buscar Produtos com Estoque Baixo
+#🔹 Buscar Produtos com Estoque Abaixo da Quantidade Mínima
 
 GET /api/Produto
 
