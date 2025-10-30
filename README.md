@@ -1,4 +1,4 @@
-🧾 # NAC2 - Sistema de Controle de Estoque e Movimentações
+# 🧾 NAC2 - Sistema de Controle de Estoque e Movimentações
 
 O NAC2 é uma API REST desenvolvida em .NET 8, utilizando Dapper, MySQL e Redis para controle de cache.
 O sistema permite o cadastro de produtos, controle de movimentações de estoque (entrada e saída), além de validações de regras de negócio relacionadas à validade de produtos perecíveis e alertas de estoque mínimo.
