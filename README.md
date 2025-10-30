@@ -25,30 +25,35 @@ Caso o produto ainda não tenha movimentações, ele é incluído automaticament
 Movimentações de produtos perecíveis vencidos são bloqueadas.
 
 # Diagrama Simples das Entidades
-+-------------------+
-|     Produto       |
-+-------------------+
-| CodSKU (PK)       |
-| Nome              |
-| Categoria          |
-| PrecoUnitario      |
-| QuantMinima        |
-| DataCriacao        |
-+-------------------+
-           |
-           | 1:N
-           |
-+---------------------------+
-|    MovimentacaoEstoque    |
-+---------------------------+
-| Id (PK)       |
-| Tipo (Entrada/Saída)      |
-| Quantidade                |
-| DataMovimentacao          |
-| Lote                      |
-| DataValidade              |
-| CodSKU (FK -> Produto)    |
-+---------------------------+
+# Produto   
+
+CodSKU (PK)
+
+Nome   
+
+Categoria 
+
+PrecoUnitario  
+
+QuantMinima 
+
+DataCriacao        
+
+# MovimentacaoEstoque    
+Id (PK)
+
+Tipo
+
+Quantidade 
+
+DataMovimentacao  
+
+Lote   
+
+DataValidade  
+
+CodSKU (FK -> Produto)    
+
 
 # 🔧 Como Executar o Projeto
 # ✅ Pré-requisitos
@@ -86,7 +91,7 @@ Acesse a API no navegador:
 https://localhost:7080/swagger
 
 #  Exemplos de Requisições API
-#🔹 Cadastrar Produto
+# 🔹 Cadastrar Produto
 
 POST /api/Produto
 
@@ -99,7 +104,7 @@ POST /api/Produto
   "DataCriacao": "2025-10-30T00:00:00Z"
 }
 
-#🔹Registrar Movimentação de Estoque
+# 🔹Registrar Movimentação de Estoque
 
 POST /api/MovimentacaoEstoque
 
@@ -112,7 +117,7 @@ POST /api/MovimentacaoEstoque
   "CodSKU": 101
 }
 
-#🔹 Buscar Produtos com Estoque Abaixo da Quantidade Mínima
+# 🔹 Buscar Produtos com Estoque Abaixo da Quantidade Mínima
 
 GET /api/Produto
 
